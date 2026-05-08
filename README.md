@@ -1,4 +1,4 @@
-# Amir Karimov — Developer Portfolio
+# Oxunjon Abdullayev — Developer Portfolio
 
 A professional, modern portfolio website built with **Django** (backend) and **Bootstrap 5** (frontend).
 
@@ -117,7 +117,7 @@ Visit **http://127.0.0.1:8000/admin** to manage content.
 
 Open `portfolio/templates/portfolio/index.html` and update:
 
-- Your **name** (replace "Amir Karimov")
+- Your **name** (replace "Oxunjon Abdullayev")
 - Your **title** (the typing animation cycles through titles in `main.js`)
 - Your **bio** in the About section
 - Your **social media links** (GitHub, LinkedIn, Telegram)
@@ -217,4 +217,4 @@ For production deployment (e.g., on a VPS with Nginx + Gunicorn):
 
 ---
 
-© 2024 Amir Karimov. All rights reserved.
+© 2024 Oxunjon Abdullayev. All rights reserved.

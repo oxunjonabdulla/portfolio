@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Django
+*.sqlite3
+staticfiles/
+media/
+*.log
+
+# Environment variables — NEVER commit real .env
+.env
+
+# IDE
+.idea/
+.vscode/
+*.DS_Store
