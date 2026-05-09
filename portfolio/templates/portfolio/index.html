@@ -375,11 +375,11 @@
         <div class="certs-grid">
             {% for cert in certificates %}
             <div class="cert-card" data-aos="fade-up" data-aos-delay="{{ forloop.counter0 }}00">
-                {% if cert.is_verified %}
-                <div class="cert-verified"><i class="bi bi-patch-check-fill"></i> Verified</div>
-                {% endif %}
                 {% if cert.image %}
                 <div class="cert-frame">
+                    {% if cert.is_verified %}
+                    <div class="cert-verified"><i class="bi bi-patch-check-fill"></i> Verified</div>
+                    {% endif %}
                     <div class="corner c-tl"></div><div class="corner c-tr"></div>
                     <div class="corner c-bl"></div><div class="corner c-br"></div>
                     <img src="{{ cert.image.url }}" alt="{{ cert.title }}" class="cert-img"
@@ -392,6 +392,9 @@
                 </div>
                 {% else %}
                 <div class="cert-frame cert-frame-placeholder">
+                    {% if cert.is_verified %}
+                    <div class="cert-verified"><i class="bi bi-patch-check-fill"></i> Verified</div>
+                    {% endif %}
                     <div class="corner c-tl"></div><div class="corner c-tr"></div>
                     <div class="corner c-bl"></div><div class="corner c-br"></div>
                     <div class="cert-placeholder-icon">
@@ -409,8 +412,8 @@
             </div>
             {% empty %}
             <div class="cert-card" data-aos="fade-up">
-                <div class="cert-verified"><i class="bi bi-patch-check-fill"></i> Verified</div>
                 <div class="cert-frame">
+                    <div class="cert-verified"><i class="bi bi-patch-check-fill"></i> Verified</div>
                     <div class="corner c-tl"></div><div class="corner c-tr"></div>
                     <div class="corner c-bl"></div><div class="corner c-br"></div>
                     <img src="{% static 'images/image.png' %}" alt="IELTS Certificate" class="cert-img" data-cert="IELTS Certificate">
