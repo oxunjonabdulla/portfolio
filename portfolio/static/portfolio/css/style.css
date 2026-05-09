@@ -60,16 +60,43 @@ a{text-decoration:none;transition:var(--transition)}
 
 /* === HERO AVATAR === */
 .hero-visual{display:flex;justify-content:center}
-.hero-avatar-wrap{position:relative;width:340px;height:340px}
+
+.hero-avatar-wrap{
+  position:relative;
+  width:340px;
+  height:340px;
+  overflow:hidden;
+}
+
 .avatar-ring{position:absolute;inset:-20px;border-radius:50%;border:1.5px solid rgba(99,102,241,.2);animation:spin 20s linear infinite}
 .ring-outer{inset:-40px;border-color:rgba(99,102,241,.1);animation-direction:reverse;animation-duration:30s}
 @keyframes spin{to{transform:rotate(360deg)}}
 .hero-avatar{width:100%;height:100%;border-radius:50%;overflow:hidden;background:linear-gradient(135deg,var(--accent-light),var(--accent),var(--cyan));box-shadow:var(--shadow-lg),0 0 0 6px rgba(99,102,241,.1)}
 .hero-avatar img{width:100%;height:100%;object-fit:cover}
 .float-tag{position:absolute;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:10px 16px;border-radius:50px;background:var(--bg-card);backdrop-filter:blur(10px);box-shadow:var(--shadow);border:1px solid var(--border);color:var(--text-1);animation:float 3s ease-in-out infinite;white-space:nowrap}
-.tag-1{top:10%;left:-40px;animation-delay:0s}
-.tag-2{bottom:15%;left:-30px;animation-delay:1s}
-.tag-3{top:20%;right:-40px;animation-delay:.5s}
+
+
+.tag-1{
+  top:10%;
+  left:0;
+  transform:translateX(-30%);
+  animation-delay:0s;
+}
+
+.tag-2{
+  bottom:15%;
+  left:0;
+  transform:translateX(-20%);
+  animation-delay:1s;
+}
+
+.tag-3{
+  top:20%;
+  right:0;
+  transform:translateX(30%);
+  animation-delay:.5s;
+}
+
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 
 /* === HERO STATS === */
