@@ -236,6 +236,12 @@ a.contact-value:hover{color:var(--accent)}
 [data-theme="dark"] ::-webkit-scrollbar-thumb{background:#475569}
 
 /* === RESPONSIVE === */
+
+/* Prevent AOS fade-left/right from causing horizontal overflow on mobile */
+@media(max-width:991px){
+[data-aos="fade-left"],[data-aos="fade-right"]{transform:translate3d(0,40px,0)!important}
+}
+
 @media(max-width:991px){
 .nav-links{display:none}
 .mobile-toggle{display:flex}
