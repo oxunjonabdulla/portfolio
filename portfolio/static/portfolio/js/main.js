@@ -1,5 +1,13 @@
 /* === PORTFOLIO MAIN JS === */
 
+// On mobile, replace horizontal AOS animations with fade-up BEFORE AOS reads them.
+// This prevents translate3d(±100px,0,0) from pushing elements outside the viewport.
+if (window.innerWidth <= 991) {
+  document.querySelectorAll('[data-aos="fade-left"],[data-aos="fade-right"]').forEach(function(el) {
+    el.setAttribute('data-aos', 'fade-up');
+  });
+}
+
 // AOS Init
 AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60 });
 
