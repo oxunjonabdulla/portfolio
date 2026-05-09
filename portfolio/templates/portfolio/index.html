@@ -5,8 +5,29 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Oxunjon Abdullayev — Python Backend Developer</title>
-    <meta name="description"
-          content="Python Backend Developer specializing in Django, FastAPI, and cloud-native solutions."/>
+    <meta name="description" content="Python Backend Developer specializing in Django, FastAPI, and cloud-native solutions. Based in Karshi, Uzbekistan."/>
+    <meta name="author" content="Oxunjon Abdullayev"/>
+    <meta name="keywords" content="Oxunjon Abdullayev, Python Backend Developer, Django Developer, FastAPI, REST API, DRF, PostgreSQL, Docker, Uzbekistan, Karshi, backend developer portfolio"/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="{{ site_url }}"/>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="{{ site_url }}"/>
+    <meta property="og:title" content="Oxunjon Abdullayev — Python Backend Developer"/>
+    <meta property="og:description" content="Python Backend Developer specializing in Django, FastAPI, and cloud-native solutions. Based in Karshi, Uzbekistan."/>
+    <meta property="og:image" content="{{ site_url }}{% static 'images/oxun.jpg' %}"/>
+    <meta property="og:site_name" content="Oxunjon Abdullayev"/>
+    <meta property="og:locale" content="en_US"/>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Oxunjon Abdullayev — Python Backend Developer"/>
+    <meta name="twitter:description" content="Python Backend Developer specializing in Django, FastAPI, and cloud-native solutions."/>
+    <meta name="twitter:image" content="{{ site_url }}{% static 'images/oxun.jpg' %}"/>
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#6366f1"/>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +42,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+    <link rel="icon" type="image/svg+xml" href="{% static 'images/favicon.svg' %}">
 </head>
 <body>
 
@@ -549,5 +571,28 @@
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="{% static 'portfolio/js/main.js' %}"></script>
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Oxunjon Abdullayev",
+  "jobTitle": "Python Backend Developer",
+  "url": "{{ site_url }}",
+  "email": "oxundev@gmail.com",
+  "image": "{{ site_url }}{% static 'images/oxun.jpg' %}",
+  "sameAs": [
+    "https://github.com/oxunjonabdulla",
+    "https://www.linkedin.com/in/oxunjonabdullayev/"
+  ],
+  "knowsAbout": ["Python", "Django", "FastAPI", "Django REST Framework", "PostgreSQL", "Docker", "REST API"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Karshi",
+    "addressCountry": "UZ"
+  }
+}
+</script>
 </body>
 </html>

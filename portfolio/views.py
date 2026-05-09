@@ -1,6 +1,7 @@
 from datetime import date
 from collections import OrderedDict
 
+from django.conf import settings
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.http import JsonResponse
@@ -88,5 +89,6 @@ def index(request):
         'years_exp': years_exp,
         'project_count': project_count,
         'tech_count': tech_count,
+        'site_url': settings.SITE_URL,
     }
     return render(request, 'portfolio/index.html', context)
