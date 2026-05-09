@@ -34,7 +34,7 @@ a{text-decoration:none;transition:var(--transition)}
 .mobile-link:hover{color:var(--accent);background:rgba(99,102,241,.08)}
 
 /* === HERO === */
-.hero{position:relative;min-height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;background:var(--bg-1)}
+.hero{position:relative;min-height:100vh;overflow:hidden;contain:paint;display:flex;flex-direction:column;justify-content:center;background:var(--bg-1)}
 .hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(99,102,241,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
 [data-theme="dark"] .hero-grid-bg{background-image:linear-gradient(rgba(99,102,241,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.06) 1px,transparent 1px)}
 .hero-glow{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none}
